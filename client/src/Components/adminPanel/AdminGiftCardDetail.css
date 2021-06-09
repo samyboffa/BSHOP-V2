@@ -1,0 +1,211 @@
+.AdmingcDetails {
+    background-image: url(../../images/BannerBG.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AdmingcProduct {
+    display: flex;
+    margin-top: 2%;
+    width: 80%;
+    justify-content: space-between;
+}
+.AdminproductDetailImgDescription {
+    display: flex;
+    gap: 1%;
+    width: 70%;
+}
+.AdminproductDetailsImg {
+    height: 60vh;
+}
+.AdminproductDetailsDescriptionName {
+    font-size: 1.7em;
+    font-weight: 600;
+    border-bottom: 3px solid #e48632;
+}
+.AdminproductDetailPrice {
+    font-size: 2.5em;
+}
+.AdminproductDetailPriceBuyBox {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+}
+.AdminproductDetailOldPriceAndDiscount {
+    display: flex;
+
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10%;
+    font-size: 1.3em;
+}
+.AdminproductDetailRegion {
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-left: 5%;
+}
+.AdminproductDetailStore {
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-left: 5%;
+}
+.AdminproductDetailDiscount {
+    color: #f34f4d;
+    font-weight: 500;
+    font-style: italic;
+}
+.AdminproductDetailOldPrice {
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: 500;
+    color: #999;
+}
+
+.AdminproductDetailBuyBox {
+    width: 50%;
+    margin-top: 20%;
+    background: none;
+    border: 2px solid #ff7a21;
+    background-color: #ff7a21;
+    font-size: 1.2em;
+    padding: 10px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.AdminproductDetailBuyBox:hover {
+    border: 2px solid #ff7a21;
+    background-color: transparent;
+}
+.AdminEditInput {
+    width: 100%;
+    background-color: #080811;
+    font-weight: 600;
+    border: none;
+
+    outline: none;
+}
+.AdminEditInput::placeholder {
+    color: #ff7a21;
+}
+#AdminEditInput {
+    border-bottom: 3px solid #e48632;
+    font-size: 1.7em;
+}
+#AdminEditInputPrice {
+    font-size: 2.5em;
+}
+#AdminInputImg {
+    height: 60vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+}
+.AdminButtonsBoxEdit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 20vh;
+}
+
+.PreviewModeOn {
+    color: #ff7a21;
+    justify-self: flex-start;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+.confirmButtonsAdmin {
+    width: 100%;
+    background: none;
+
+    font-size: 1.2em;
+    padding: 10px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.PreviewButtonAdmin {
+    border: 2px solid #03256c;
+    background-color: #03256c;
+}
+.PreviewButtonAdmin:hover {
+    border: 2px solid #03256c;
+    background-color: transparent;
+}
+.productUpdated {
+    color: #5e8b7e;
+    justify-self: flex-start;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+.deleteButtonAdmin {
+    border: 2px solid #fb3640;
+    background-color: #fb3640;
+    text-align: center;
+}
+.deleteButtonAdmin:hover {
+    border: 2px solid #fb3640;
+    background-color: transparent;
+}
+
+.ConfirmButtonAdmin {
+    margin: 10% auto;
+
+    border: 2px solid #ff7a21;
+    background-color: #ff7a21;
+}
+.ConfirmButtonAdmin:hover {
+    border: 2px solid #ff7a21;
+    background-color: transparent;
+}
+.confirmdeleteBox {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    background-color: rgb(8, 8, 17, 0.9);
+}
+.ConfirmdeleteButtonAdmin,
+.CanceldeleteButtonAdmin {
+    width: 20%;
+}
+.ConfirmdeleteButtonAdmin {
+    border: 2px solid #fb3640;
+    background-color: #fb3640;
+}
+.ConfirmdeleteButtonAdmin:hover {
+    border: 2px solid #fb3640;
+    background-color: transparent;
+}
+.CanceldeleteButtonAdmin {
+    border: 2px solid #5b6d5b;
+    background-color: #5b6d5b;
+}
+.CanceldeleteButtonAdmin:hover {
+    border: 2px solid #5b6d5b;
+    background-color: transparent;
+}
+.AdminWarningDelete {
+    color: #fb3640;
+    font-size: 1.8em;
+}

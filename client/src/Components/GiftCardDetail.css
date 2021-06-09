@@ -1,0 +1,128 @@
+.gcDetails {
+    background-image: url(../images/BannerBG.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gcProduct {
+    display: flex;
+    margin-top: 10%;
+    width: 80%;
+    justify-content: space-between;
+}
+.productDetailImgDescription {
+    display: flex;
+    gap: 1%;
+    width: 70%;
+}
+.productDetailsImg {
+    height: 60vh;
+}
+.productDetailsDescriptionName {
+    font-size: 1.7em;
+    font-weight: 600;
+    border-bottom: 3px solid #e48632;
+}
+.productDetailPrice {
+    font-size: 2.5em;
+}
+.productDetailPriceBuyBox {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+}
+.productDetailOldPriceAndDiscount {
+    display: flex;
+
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10%;
+    font-size: 1.3em;
+}
+.productDetailRegion {
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-left: 5%;
+}
+.productDetailStore {
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-left: 5%;
+}
+.productDetailDiscount {
+    color: #f34f4d;
+    font-weight: 500;
+    font-style: italic;
+}
+.productDetailOldPrice {
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: 500;
+    color: #999;
+}
+
+.productDetailBuyBox {
+    width: 50%;
+    margin-top: 20%;
+    background: none;
+    border: 2px solid #ff7a21;
+    background-color: #ff7a21;
+    font-size: 1.2em;
+    padding: 10px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.productDetailBuyBox:hover {
+    border: 2px solid #ff7a21;
+    background-color: transparent;
+}
+.alreadyInCart {
+    color: #f34f4d;
+}
+@media (max-width: 768px) {
+    .gcProduct {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .productDetailImgDescription {
+        flex-direction: column;
+        margin-top: 40%;
+        width: 100%;
+    }
+    .productDetailsImg {
+        height: 50vh;
+        width: 40vw;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .productDetailRegion {
+        width: 40%;
+    }
+    .productDetailStore {
+        width: 40%;
+    }
+    .productDetailPriceBuyBox {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .productDetailBuyBox {
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .productDetailOldPriceAndDiscount {
+        align-items: center;
+        justify-content: center;
+    }
+}

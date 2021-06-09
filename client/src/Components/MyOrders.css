@@ -1,0 +1,108 @@
+.oneOrderItem {
+    width: 80%;
+    margin: 2% auto;
+    background-image: url("../images/orderBG.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 1% 0;
+}
+.oneOrderHeader {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50%;
+    border-bottom: 1px solid black;
+}
+.oneOrderOrange {
+    color: #ff7a21;
+}
+.oneOrderDate {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(177, 177, 177);
+}
+.oneOrderTotal {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 700;
+}
+/*product css*/
+.oneOrderOrdersList {
+    margin-top: 1%;
+}
+.oneOrderOneProduct {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+}
+.oneOrderOneProductImg {
+    width: 50px;
+}
+.oneOrderOneProductName {
+    width: 20%;
+}
+.oneOrderOneProductpriceQt {
+    width: 20%;
+    text-align: center;
+}
+.oneOrderOneProductQt {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(177, 177, 177);
+}
+.oneOrderOneProductSubTotal {
+    width: 10%;
+    text-align: center;
+}
+.retreiveKey {
+    width: 20%;
+    border: 2px solid #346751;
+    background-color: #346751;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.retreiveKey:hover {
+    border: 2px solid #346751;
+    background-color: transparent;
+}
+.DeliveredKeys {
+    width: 20%;
+    text-align: center;
+    color: #346751;
+}
+
+@media (max-width: 768px) {
+    .myOrdersPage {
+        width: 100%;
+    }
+    .oneOrderItem {
+        width: 100%;
+    }
+    .oneOrderHeader {
+        gap: 10%;
+    }
+    .oneOrderOneProduct {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+    }
+    .oneOrderOneProductName {
+        width: 50%;
+    }
+    .oneOrderOneProductpriceQt {
+        display: flex;
+        width: 30%;
+        align-items: center;
+        gap: 5%;
+    }
+    .oneOrderOneProductSubTotal {
+        display: flex;
+        width: 40%;
+        align-items: center;
+        gap: 5%;
+    }
+}

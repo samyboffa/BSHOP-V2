@@ -1,0 +1,12 @@
+.GCSELECTAdmin {
+    width: 20%;
+    background-color: #080811;
+}
+.adminOtherInputs {
+    display: flex;
+    width: 90%;
+    gap: 3%;
+}
+#admintypeValuex {
+    width: 30%;
+}

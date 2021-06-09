@@ -1,0 +1,28 @@
+.OrderDetailsOneProduct {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+    width: 90%;
+    margin: 1% auto;
+    background-color: #0d0e1b;
+    border-radius: 10px;
+}
+.OrderDetailsOneProductImg {
+    height: 20vh;
+    width: auto;
+    border-radius: 20px;
+}
+.OrderDetailsOneProductName {
+    width: 30%;
+}
+.OrderDetailsOneProductInput {
+    width: 40%;
+    background: #080811;
+    height: 5vh;
+    border: none;
+    outline: none;
+}
+.OrderDetailProductsButtonBox {
+    text-align: center;
+}

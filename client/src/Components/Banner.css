@@ -1,0 +1,27 @@
+.totalBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/BannerBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    gap: 10px;
+}
+.BannerTitle {
+    text-align: center;
+    font-size: 4em;
+}
+
+.BannerTitleOrange {
+    color: #ff7a21;
+}
+.BannerPath {
+    display: flex;
+    font-weight: 600;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}

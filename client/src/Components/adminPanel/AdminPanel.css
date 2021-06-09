@@ -1,0 +1,51 @@
+.adminPanelBoxes {
+    display: flex;
+    width: 100%;
+    margin: 2% auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    transform: skew(-8deg);
+}
+
+.adminPanelBox {
+    min-width: 20%;
+    height: 30vh;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.adminPanelBox:hover {
+    opacity: 1;
+}
+.adminPanelBox svg {
+    fill: white;
+}
+.adminPanelBoxText {
+    color: white;
+}
+.adminPanelBoxTextNumber {
+    color: white;
+    font-size: 2.5em;
+}
+.userBox {
+    background-image: url("../../images/adminUserBG.jpg");
+    background-size: cover;
+}
+.productsBox {
+    background-image: url("../../images/adminProductBG.jpg");
+    background-size: cover;
+}
+.OrdersBox {
+    background-image: url("../../images/adminOrdersBG.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .adminPanelBox {
+        width: 80vw;
+        margin: 2% auto;
+    }
+}

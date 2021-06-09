@@ -1,0 +1,60 @@
+.loginPage {
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("../images/LoginBG.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.LoginMainLogo {
+    width: 100px;
+}
+.loginBox {
+    min-width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+.boxInput {
+    width: 85%;
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid rgba(74, 70, 96, 0.8);
+    border-radius: 0.5em;
+    padding: 4%;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+
+.boxInput:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.boxInput::placeholder {
+    color: white;
+}
+.boxInputSubmit {
+    text-align: center;
+    background-color: #ff7a21;
+    border: 2px solid #ff7a21;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.boxInputSubmit:hover {
+    background-color: transparent;
+}
+
+.notAMember {
+    font-size: 1.1em;
+    color: #999;
+}
+.toSignUp {
+    font-size: 1.1em;
+    color: white;
+}

@@ -1,0 +1,137 @@
+.allHeader {
+    background-color: rgba(8, 3, 37, 0.4);
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    gap: 10%;
+    background-size: contain;
+    transition: all 0.4s ease;
+    z-index: 4;
+}
+.responsiveNav {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+.HeaderIconLink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerChangeNow {
+    background-color: rgb(0, 0, 0);
+    height: 8vh;
+}
+.headerIconBox {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerIconImg {
+    width: auto;
+    height: 50%;
+}
+
+.headerNavigation {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    gap: 5%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.headerUserSearchCart {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    gap: 5%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.headerNavigationItems {
+    fill: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    gap: 5px;
+}
+
+.dropdownUser {
+    padding: 0 1%;
+    position: fixed;
+    left: 80%;
+    top: 12vh;
+    background-color: rgba(8, 3, 37, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vw;
+    height: 30vh;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+}
+.dropdownUserShown {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dropDownItem {
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropDowntriangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 768px) {
+    .allHeader {
+        flex-direction: column;
+        height: auto;
+        font-size: 0.9em;
+        transition: all 0.4s ease;
+    }
+    .responsiveNav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .headerIconImg {
+        width: 60px;
+        margin: 10% auto;
+    }
+    .headerChangeNow {
+        background-color: rgba(8, 3, 37, 0.4);
+    }
+    .dropdownUser {
+        width: 100%;
+        left: 0;
+        top: 14vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 6vh;
+    }
+}

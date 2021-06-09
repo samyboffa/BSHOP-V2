@@ -1,0 +1,88 @@
+.cartElt {
+    margin-top: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #131324;
+}
+.cartElt td {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.cartEltImg {
+    height: 100%;
+    width: 11%;
+    border-radius: 20px;
+}
+.cartEltName {
+    width: 20%;
+}
+.plusMoinExt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-content: center;
+}
+.plusMoin {
+    height: 6vh;
+    width: 10%;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #080811;
+}
+
+.CartEltButton {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    fill: rgb(104, 104, 104);
+}
+.CartEltButton:hover {
+    fill: rgb(13, 107, 0);
+}
+
+.CartEltPlus:active {
+    opacity: 0.5;
+    transform: scale(1.5);
+    fill: rgb(0, 255, 0);
+}
+.CartEltMoin:active {
+    opacity: 0.5;
+    transform: scale(1.5);
+    fill: rgb(206, 0, 0);
+}
+.cartEltSubTotal {
+    display: flex;
+    align-items: center;
+}
+.cartEltRemove {
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+    fill: rgb(53, 53, 53);
+    cursor: pointer;
+}
+.cartEltRemove svg:hover {
+    fill: rgb(141, 0, 0);
+    transition: all 0.1s ease;
+}
+.cartEltRemove svg:active {
+    fill: rgb(255, 0, 0);
+    transform: scale(1.5);
+}
+@media (max-width: 768px) {
+    .cartEltImg {
+        display: none;
+    }
+    .cartEltName {
+        width: 40%;
+    }
+}

@@ -1,0 +1,17 @@
+.LandpageTotal {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    height: 100vh;
+}
+.LandpageTitle {
+    font-size: 7em;
+    letter-spacing: 5px;
+}
+.LandpageSubtitle {
+    font-size: 1.8em;
+    color: #ff7a21;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

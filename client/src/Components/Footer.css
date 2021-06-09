@@ -1,0 +1,66 @@
+.footerPage {
+    background-image: url("../images/footerBG.jpg");
+
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+}
+
+.footerUpBlock {
+    display: flex;
+    justify-content: space-around;
+}
+.footerAbout {
+    width: 30%;
+}
+.footerSection {
+    margin-top: 5%;
+}
+.footerPar {
+    font-weight: 600;
+    color: #727489;
+    display: flex;
+    align-items: center;
+}
+.footerTitle {
+    margin-bottom: 5%;
+}
+.Copiright {
+    text-align: center;
+    color: #727489;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.footerLogo {
+    width: 20vh;
+}
+.footerSeparation {
+    border-color: #181829;
+    margin-top: 5%;
+}
+.footerInside {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footercontactsLogo {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.footerContactOneLogo {
+    fill: #ff7a21;
+    transition: all 0.3s ease;
+}
+.footerContactOneLogo:hover {
+    transform: scale(1.1);
+    fill: white;
+}

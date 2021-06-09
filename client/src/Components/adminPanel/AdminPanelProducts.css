@@ -1,0 +1,55 @@
+.adminPanelProductsPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.adminAllCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 5%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.adminLinkAdd {
+    width: 100%;
+    text-align: center;
+}
+.adminAddProductButton {
+    margin: 5% auto 2% auto;
+    width: 30%;
+    background: none;
+    border: 2px solid #ff7a21;
+    background-color: #ff7a21;
+    font-size: 1.2em;
+    padding: 10px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.adminAddProductButton:hover {
+    border: 2px solid #ff7a21;
+    background-color: transparent;
+}
+.adminSearchField {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2% 1%;
+    align-items: center;
+    width: 50%;
+    margin: 0% auto 0% auto;
+    border-radius: 10px;
+}
+.adminSearchField input {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-left: 2%;
+    height: 7vh;
+    background-color: #0d0e1b;
+    width: 100%;
+    outline: none;
+    border: none;
+}

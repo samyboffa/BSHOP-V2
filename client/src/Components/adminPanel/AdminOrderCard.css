@@ -1,0 +1,20 @@
+.orderCardButtonBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.orderCardButton {
+    width: 30%;
+    background: none;
+    font-size: 1.2em;
+    padding: 10px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.setPrepared {
+    border: 2px solid #5e8b7e;
+    background-color: #5e8b7e;
+}

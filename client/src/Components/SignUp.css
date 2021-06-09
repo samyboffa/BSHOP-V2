@@ -1,0 +1,27 @@
+.toLogin {
+    font-size: 1.1em;
+    color: white;
+}
+.responseError {
+    color: red;
+}
+.SignUpSuccessMsg span {
+    color: green;
+    font-size: 1em;
+    font-weight: 600;
+}
+.toLoginAftersuccess {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+.signUpPage {
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("../images/LoginBG.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}

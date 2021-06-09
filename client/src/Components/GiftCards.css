@@ -1,0 +1,93 @@
+.giftCardsPageAll {
+    display: flex;
+    justify-content: space-evenly;
+}
+.giftCardsAllCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-around;
+}
+.giftCardsFilterBox {
+    width: 20%;
+    padding: 0 2%;
+    margin-top: 2%;
+}
+.filterBoxHeader {
+    display: flex;
+    justify-content: space-between;
+}
+.filterBoxClear {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    color: #ff7a21;
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.filterBoxBody {
+    margin-top: 10%;
+}
+.filterBoxInptBoxSubTitle {
+    font-size: 1em;
+    font-weight: 600;
+    color: #c7dada;
+}
+.filterBoxInptBox {
+    margin-top: 10%;
+}
+.filterBoxInputInput {
+    font-size: 1.1em;
+    font-weight: 600;
+
+    height: 7vh;
+    background-color: #0d0e1b;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.filterBoxRadio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 4%;
+    font-size: 1.1em;
+}
+.checkBoxRadio {
+    width: 15px;
+    height: 15px;
+}
+.filterBoxRadiocontainer {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+.FilterBoxApplyFilters {
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #ff7a21;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 70%;
+    height: 8vh;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.FilterBoxApplyFilters:hover {
+    background-color: #ff7a21;
+}
+@media (max-width: 768px) {
+    .giftCardsPageAll {
+        flex-direction: column;
+        align-items: center;
+    }
+    .giftCardsFilterBox {
+        width: 90%;
+    }
+}

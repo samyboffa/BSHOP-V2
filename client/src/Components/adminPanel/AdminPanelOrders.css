@@ -1,0 +1,17 @@
+.adminOrdersPage {
+    margin-top: 5%;
+}
+.adminOrdersSubtitle {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 5%;
+}
+.adminOrdersEmpty {
+    text-align: center;
+    width: 20%;
+    margin: 5% auto;
+    border: 2px solid #ff7a21;
+    padding: 3%;
+    font-size: 1.5em;
+    font-weight: 700;
+}
