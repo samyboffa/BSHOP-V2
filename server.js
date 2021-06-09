@@ -59,4 +59,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //launching the server
-app.listen(3010, console.log("server running and waiting for requests"));
+app.listen(
+    process.env.PORT,
+    console.log("server running and waiting for requests")
+);
