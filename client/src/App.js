@@ -3,7 +3,6 @@ import Header from "./Components/Header";
 import { GiftCards } from "./Components/GiftCards";
 import { Home } from "./Components/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Games } from "./Components/Games";
 import { TopUp } from "./Components/TopUp";
 import { LoginSignUp } from "./Components/Login";
 import { SignUp } from "./Components/SignUp";
@@ -30,53 +29,66 @@ function App() {
                     <Route path="/" exact>
                         <Header />
                         <Home />
-                    </Route>
-                    <Route path="/games">
-                        <Header />
-                        <Games />
+                        <Footer />
                     </Route>
                     <Route exact path="/topup">
                         <Header />
                         <TopUp />
+                        <Footer />
                     </Route>
                     <Route exact path="/giftcards">
                         <Header />
                         <GiftCards />
+                        <Footer />
                     </Route>
                     <Route path="/login" component={LoginSignUp} />
                     <Route path="/signup" component={SignUp} />
 
                     <Route
                         path="/giftcards/:id"
-                        render={({ match }) => <GiftCardDetail match={match} />}
+                        render={({ match }) => (
+                            <>
+                                {" "}
+                                <GiftCardDetail match={match} /> <Footer />
+                            </>
+                        )}
                     ></Route>
                     <Route
                         path="/topup/:gameName"
-                        render={({ match }) => <TopUpDetails match={match} />}
+                        render={({ match }) => (
+                            <>
+                                {" "}
+                                <TopUpDetails match={match} /> <Footer />
+                            </>
+                        )}
                     ></Route>
 
                     <PrivateRoute path="/profile">
                         {/*Private */}
                         <Header />
                         <Profile />
+                        <Footer />
                     </PrivateRoute>
 
                     <PrivateRoute path="/cart">
                         {/*Private */}
                         <Header />
                         <Cart />
+                        <Footer />
                     </PrivateRoute>
 
                     <PrivateRoute path="/myorders">
                         {/*Private */}
                         <Header />
                         <MyOrders />
+                        <Footer />
                     </PrivateRoute>
 
                     <PrivateRoute path="/notif">
                         {/*Private */}
                         <Header />
                         <MyNotifications />
+                        <Footer />
                     </PrivateRoute>
 
                     <AdminRoute
@@ -120,7 +132,6 @@ function App() {
                         )}
                     ></AdminRoute>
                 </Switch>
-                <Footer />
             </Router>
         </div>
     );

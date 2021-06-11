@@ -61,6 +61,7 @@ export default function AdminPanelAddPage() {
                             <option value="CG"> Gift Card</option>
                             <option value="SUB"> Subscription </option>
                             <option value="GAME"> Game</option>
+                            <option value="GP"> Game Point</option>
                         </select>
                         <select
                             defaultValue={newCurrency}

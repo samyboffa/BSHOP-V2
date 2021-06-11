@@ -6,17 +6,18 @@ import {
     facebook,
     googlePlus,
     instagram,
+    mail,
+    phone,
     twitter,
     youtube,
 } from "../svg/svg";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
         <div className="footerPage">
             <div className="footerUpBlock">
                 <div className="footerAbout footerSection">
-                    <h2 className="footerTitle">ABOUT US</h2>
+                    <h2 className="footerTitle footertitleMargin">ABOUT US</h2>
                     <p className="footerPar">
                         B-SHOP is The first Gaming Store In Tunisia. With +10000
                         Orders, We Became The Most Trustfull Gaming Web Site. We
@@ -43,10 +44,10 @@ export default function Footer() {
                 </div>
                 <div className="footerContact footerSection">
                     <h2 className="footerTitle">CONTACT US</h2>
-                    <li className="footerPar">{bannerArrow} Tel : 54857558</li>
+                    <li className="footerPar">{phone} Tel : 54857558</li>
                     <li className="footerPar">
                         {" "}
-                        {bannerArrow} Mail : bshopgames@gmail.com
+                        {mail} Mail : bshopgames@gmail.com
                     </li>
                 </div>
             </div>
@@ -55,12 +56,37 @@ export default function Footer() {
                 {" "}
                 <img className="footerLogo" src={footerLogo} alt="" />{" "}
                 <div className="footercontactsLogo">
-                    <Link className="footerContactOneLogo">{facebook}</Link>
-                    <Link className="footerContactOneLogo">{instagram}</Link>
-                    <Link className="footerContactOneLogo">{youtube}</Link>
-                    <Link className="footerContactOneLogo">{twitter}</Link>
+                    <a
+                        href="https://www.facebook.com/bshop4"
+                        className="footerContactOneLogo"
+                    >
+                        {facebook}
+                    </a>
+                    <a
+                        href="https://www.instagram.com/bshopgames/"
+                        className="footerContactOneLogo"
+                    >
+                        {instagram}
+                    </a>
+                    <a
+                        href="https://www.youtube.com/"
+                        className="footerContactOneLogo"
+                    >
+                        {youtube}
+                    </a>
+                    <a
+                        href="https://twitter.com/"
+                        className="footerContactOneLogo"
+                    >
+                        {twitter}
+                    </a>
 
-                    <Link className="footerContactOneLogo">{googlePlus}</Link>
+                    <a
+                        href="https://www.google.com/"
+                        className="footerContactOneLogo"
+                    >
+                        {googlePlus}
+                    </a>
                 </div>
             </div>
             <h2 className="Copiright">

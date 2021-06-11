@@ -58,3 +58,8 @@
     font-size: 1.1em;
     color: white;
 }
+@media (max-width: 768px) {
+    .loginBox {
+        width: 70%;
+    }
+}

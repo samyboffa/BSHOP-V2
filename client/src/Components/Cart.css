@@ -33,6 +33,9 @@
     width: 28%;
     position: sticky;
     top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .OrderAdded {
     color: green;
@@ -76,14 +79,16 @@
     margin-top: 5%;
 }
 .checkoutButton {
+    margin-top: 5%;
     text-align: center;
+    align-self: center;
     background-color: transparent;
     border: 2px solid #ff7a21;
     transition: all 0.5s ease;
     cursor: pointer;
     font-size: 1.2em;
     font-weight: 500;
-    width: 70%;
+    width: 100%;
     height: 8vh;
 }
 
@@ -92,6 +97,31 @@
 }
 .cartSeparation {
     border: 0.5px solid #131324;
+}
+.paiementMethods {
+    padding: 1%;
+    margin: 10% auto;
+    border-radius: 5px;
+    border: 1px solid rgb(106, 106, 106, 0.3);
+    background-color: #0d0e1b;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.paimenetlogo {
+    width: 80px;
+}
+.PaiementList {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin: 2% auto;
+}
+.PaimentLink {
+    color: #ff7a21;
+    font-weight: 600;
+}
+.PaimentLink:hover {
+    text-decoration: #ff7a21 underline;
 }
 @media (max-width: 768px) {
     .allCart {

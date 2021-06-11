@@ -105,33 +105,70 @@
     border-right: 8px solid transparent;
     border-bottom: 8px solid rgba(255, 255, 255, 0.4);
 }
+.openMenuIcon {
+    display: none;
+}
 @media (max-width: 768px) {
-    .allHeader {
-        flex-direction: column;
-        height: auto;
-        font-size: 0.9em;
-        transition: all 0.4s ease;
-    }
     .responsiveNav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
+        padding-left: 3%;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 30vw;
+        height: 88vh;
+        justify-content: space-evenly;
+        background-color: rgba(8, 3, 37, 0.4);
+        transition: all 0.3s ease;
+        transform: translateX(100%);
     }
-    .headerIconImg {
-        width: 60px;
-        margin: 10% auto;
+    .sideMenuShown {
+        transform: translateX(0);
+    }
+    .headerNavigation {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20vh;
+    }
+    .headerUserSearchCart {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20vh;
+    }
+    .quitMenuIcon {
+        fill: white;
+        align-self: center;
+    }
+    .quitMenuIcon:hover {
+        fill: #ff7a21;
+    }
+    .dropdownUser {
+        display: flex;
+        position: static;
+        opacity: 1;
+        background: none;
+        justify-content: space-evenly;
+    }
+    .openMenuIcon {
+        fill: white;
+        height: fit-content;
+    }
+    .allHeader {
+        justify-content: space-around;
+        gap: 50%;
+        align-items: center;
     }
     .headerChangeNow {
         background-color: rgba(8, 3, 37, 0.4);
+        height: 12vh;
     }
     .dropdownUser {
-        width: 100%;
-        left: 0;
-        top: 14vh;
-        text-align: center;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        height: 6vh;
+        pointer-events: all;
+    }
+    .openMenuIcon {
+        display: block;
+    }
+    .dropdownUserShown {
+        transform: translateY(10px);
     }
 }

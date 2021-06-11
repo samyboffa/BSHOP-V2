@@ -4,14 +4,29 @@
     align-content: flex-end;
     justify-content: center;
     height: 100vh;
+    background-image: url("../images/BG1.png");
+    background-position: center;
+    background-size: cover;
 }
 .LandpageTitle {
     font-size: 7em;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    margin-left: 4%;
 }
 .LandpageSubtitle {
     font-size: 1.8em;
     color: #ff7a21;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-left: 1%;
+}
+
+@media (max-width: 768px) {
+    .LandpageTitle {
+        font-size: 5em;
+        letter-spacing: 5px;
+    }
+    .LandpageSubtitle {
+        font-size: 1.3em;
+    }
 }

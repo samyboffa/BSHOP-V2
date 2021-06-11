@@ -34,7 +34,9 @@ export const LoginSignUp = () => {
         <Loading />
     ) : (
         <div className="loginPage">
-            <img src={mainLogo} alt="" className="LoginMainLogo" />
+            <Link to="/">
+                <img src={mainLogo} alt="" className="LoginMainLogo" />
+            </Link>
             <h2 className="LoginTitle">ACCOUNT LOGIN</h2>
             <h5 className="responseInfo responseError">{error}</h5>
             <form className="loginBox" onSubmit={LoginFunction}>

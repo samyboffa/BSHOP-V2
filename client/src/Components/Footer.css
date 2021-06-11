@@ -1,6 +1,5 @@
 .footerPage {
     background-image: url("../images/footerBG.jpg");
-
     width: 100%;
     background-size: cover;
     background-position: 50%;
@@ -63,4 +62,18 @@
 .footerContactOneLogo:hover {
     transform: scale(1.1);
     fill: white;
+}
+@media (max-width: 768px) {
+    .footerUpBlock {
+        flex-direction: column;
+    }
+    .footertitleMargin {
+        margin-top: 20%;
+    }
+    .footerSection {
+        width: 100%;
+    }
+    .footerLogo {
+        width: 15vw;
+    }
 }

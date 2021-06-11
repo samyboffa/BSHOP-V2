@@ -9,17 +9,16 @@ import valorantLogo from "../images/valorantLogo.jpg";
 import lolLogo from "../images/lolLogo.jpg";
 import robloxLogo from "../images/robloxLogo.jpg";
 import { Link } from "react-router-dom";
-import Banner from "./Banner";
 
 export const TopUpHome = () => {
     return (
         <>
-            <Banner
-                firstWord="TOP"
-                secondWord="UP"
-                pathName="TOP UP"
-                secondLink="/topup"
-            />
+            <div className="totalGamesCardsTitleBox">
+                <h1 className="totalGamesCardsTitle">
+                    TOP <span className="TitleOrange">UP</span>{" "}
+                </h1>
+                <div className="TitleUnderline"></div>
+            </div>
             <div className="topUpHome">
                 <div className="topUpCards">
                     <Link to="/topup/Fortnite" className="topUpCard fortnite">

@@ -5,6 +5,7 @@ export const Paypal = ({ amount }) => {
     useEffect(() => {
         window.paypal
             .Buttons({
+                // eslint-disable-next-line
                 createOrder: (data, actions, error) => {
                     return actions.order.create({
                         intent: "CAPTURE",
@@ -20,11 +21,13 @@ export const Paypal = ({ amount }) => {
                     });
                 },
                 onApprove: async (data, actions) => {
+                    // eslint-disable-next-line
                     const order = await actions.order.capture();
                 },
                 onError: (err) => {},
             })
             .render(paypal.current);
+        // eslint-disable-next-line
     }, []);
     return (
         <div>

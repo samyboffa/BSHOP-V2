@@ -4,11 +4,13 @@ import React, { useEffect, useState } from "react";
 import "./TopUpDetails.css";
 import worldIcon from "../images/world.png";
 import Header from "./Header";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Banner from "./Banner";
 import { Loading } from "./Loading";
+import { getCurrentUser } from "../Redux/actions/user";
 
 export const TopUpDetails = (match) => {
+    const dispatch = useDispatch();
     const [topUp, settopUp] = useState();
     const [topUpId, settopUpId] = useState();
     const [selectedValue, setselectedValue] = useState();
@@ -21,11 +23,6 @@ export const TopUpDetails = (match) => {
         password: "",
     });
     const [errMessage, seterrMessage] = useState();
-    const topUp1 = useSelector((state) =>
-        state.topUpReducer.topUps.filter(
-            (el) => el.gameName === match.match.params.gameName
-        )
-    );
 
     useEffect(() => {
         axios
@@ -131,6 +128,7 @@ export const TopUpDetails = (match) => {
                                         if (res.status === 208) {
                                             seterrMessage(res.data);
                                         }
+                                        dispatch(getCurrentUser());
                                     })
                                     .catch((err) => console.log(err));
                             }}

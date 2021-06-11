@@ -50,7 +50,9 @@ export const SignUp = () => {
         <Loading />
     ) : (
         <div className="signUpPage">
-            <img src={mainLogo} alt="" className="LoginMainLogo" />
+            <Link to="/">
+                <img src={mainLogo} alt="" className="LoginMainLogo" />
+            </Link>
             <h2 className="LoginTitle">CREATE ACCOUNT</h2>
             <h5 className="responseInfo SignUpSuccessMsg">
                 {registerySuccess === "USER_REGISTERED" ? (
@@ -62,7 +64,7 @@ export const SignUp = () => {
                     </span>
                 ) : null}
             </h5>
-            <h5 className="responseInfo" className="responseError">
+            <h5 className="responseInfo responseError">
                 {error ? error : null}
                 {resError ? resError : null}
             </h5>
@@ -86,7 +88,7 @@ export const SignUp = () => {
                     required
                     type="password"
                     className="boxInput"
-                    placeholder="Password"
+                    placeholder="Password (8 charachters minimum)"
                     onChange={(e) => setpassword(e.target.value)}
                 />
                 <input

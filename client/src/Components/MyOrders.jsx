@@ -8,7 +8,7 @@ import Banner from "./Banner";
 export const MyOrders = () => {
     const dispatch = useDispatch();
 
-    useEffect(async () => {
+    useEffect(() => {
         dispatch(getMyOrders(userId));
         // eslint-disable-next-line
     }, []);
@@ -55,6 +55,7 @@ export const MyOrders = () => {
                                     <img
                                         className="oneOrderOneProductImg"
                                         src={product.img}
+                                        alt="order"
                                     />
                                     <div className="oneOrderOneProductName">
                                         {product.name}

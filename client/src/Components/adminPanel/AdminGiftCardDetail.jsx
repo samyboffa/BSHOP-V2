@@ -15,6 +15,7 @@ export default function AdminGiftCardDetail({ match }) {
     );
     useEffect(() => {
         dispatch(getSingleProduct(match.params.id));
+        // eslint-disable-next-line
     }, [productUpdated]);
 
     const product = useSelector((state) => state.productsReducer.singleProduct);
@@ -111,7 +112,7 @@ export default function AdminGiftCardDetail({ match }) {
                                 <img
                                     src={previewModeOn ? newImg : product.img}
                                     className="AdminproductDetailsImg"
-                                    alt="image"
+                                    alt="previewDetails"
                                 />
                             )}
 

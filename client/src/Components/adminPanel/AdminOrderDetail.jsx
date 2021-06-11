@@ -60,7 +60,7 @@ export default function AdminOrderDetail({ match }) {
                             <img
                                 className="OrderDetailsOneProductImg"
                                 src={product.img}
-                                alt="image"
+                                alt="detailProduct"
                             />
                             <p> x {product.quantity}</p>
                             <div className="OrderDetailsOneProductName">

@@ -176,4 +176,10 @@
     .topUpDescription {
         margin-bottom: 2%;
     }
+    .buyButtonTopUp {
+        text-align: center;
+    }
+    .buyButtonTopUp button {
+        width: 80%;
+    }
 }

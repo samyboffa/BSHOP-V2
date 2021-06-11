@@ -29,6 +29,7 @@ export const AdminPanelProducts = () => {
                 el.name.toUpperCase().includes(searchField.toUpperCase())
             )
         );
+        // eslint-disable-next-line
     }, [searchField]);
 
     return loadingProducts ? (

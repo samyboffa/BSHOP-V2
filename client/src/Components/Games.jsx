@@ -20,18 +20,20 @@ export const Games = () => {
             </div>
 
             <div className="totalGameCardsallCards">
-                {games.map((product, index) => (
-                    <Link to={`/giftcards/${product._id}`}>
-                        <GiftCardCard
-                            key={index}
-                            img={product.img}
-                            currentPrice={product.currentPrice}
-                            originalPrice={product.originalPrice}
-                            name={product.name}
-                            platform={product.platform}
-                        />
-                    </Link>
-                ))}
+                {games.map((product, index) =>
+                    index < 8 ? (
+                        <Link to={`/giftcards/${product._id}`}>
+                            <GiftCardCard
+                                key={index}
+                                img={product.img}
+                                currentPrice={product.currentPrice}
+                                originalPrice={product.originalPrice}
+                                name={product.name}
+                                platform={product.platform}
+                            />
+                        </Link>
+                    ) : null
+                )}
             </div>
         </div>
     );

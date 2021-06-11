@@ -1,4 +1,5 @@
 export const replaceWord = (word) => {
+    // eslint-disable-next-line
     const newWorld = word.split("").map((el, index) => {
         if (index <= 22) {
             return el;
