@@ -4,11 +4,11 @@ import { Route, Redirect } from "react-router";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
     const isAuth = useSelector((state) => state.userReducer.isAuth);
-
-    if (isAuth) {
-        return <Route component={Component} {...rest} />;
-    }
-    return <Redirect to="/" />;
+    return isAuth ? (
+        <Route component={Component} {...rest} />
+    ) : (
+        <Redirect to="/" />
+    );
 };
 
 export default PrivateRoute;

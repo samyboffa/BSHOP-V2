@@ -9,8 +9,9 @@
     align-items: baseline;
     border-radius: 30px;
     padding: 1% 1%;
-    background-image: url("../images/GTABG.jpg");
+    background-image: url("../images/orderBG.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .UpdateUserFormInputs {

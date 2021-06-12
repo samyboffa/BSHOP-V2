@@ -22,9 +22,8 @@ export const Games = () => {
             <div className="totalGameCardsallCards">
                 {games.map((product, index) =>
                     index < 8 ? (
-                        <Link to={`/giftcards/${product._id}`}>
+                        <Link to={`/giftcards/${product._id}`} key={index}>
                             <GiftCardCard
-                                key={index}
                                 img={product.img}
                                 currentPrice={product.currentPrice}
                                 originalPrice={product.originalPrice}

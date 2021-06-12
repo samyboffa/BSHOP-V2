@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Loading } from "../Loading";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllOrders } from "../../Redux/actions/orders";
@@ -7,21 +7,29 @@ import "./AdminPanel.css";
 import { adminOrders, adminProduct, adminUsers } from "../../svg/svg";
 import Banner from "../Banner";
 import { Link } from "react-router-dom";
+import { getUsersNumber } from "../../Redux/actions/user";
 
 export const AdminPanel = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getProducts());
         dispatch(getAllOrders());
+        dispatch(getUsersNumber());
         // eslint-disable-next-line
     }, []);
-
+    const [pendingOrders, setpendingOrders] = useState();
     const allProducts = useSelector((state) => state.productsReducer.products);
     const allOrders = useSelector((state) => state.ordersReducer.orders);
     const loadingProducts = useSelector(
         (state) => state.productsReducer.loading
     );
     const loadingOrders = useSelector((state) => state.ordersReducer.loading);
+    const userNumber = useSelector((state) => state.userReducer.userNumber);
+    useEffect(() => {
+        setpendingOrders(
+            allOrders.filter((order) => order.status === "Pending").length
+        );
+    }, [allOrders]);
 
     return loadingProducts || loadingOrders ? (
         <Loading />
@@ -37,7 +45,9 @@ export const AdminPanel = () => {
                     <Link className="adminPanelBox userBox">
                         {adminUsers}
                         <h4 className="adminPanelBoxText">
-                            <span className="adminPanelBoxTextNumber">30</span>{" "}
+                            <span className="adminPanelBoxTextNumber">
+                                {userNumber ? userNumber : 100}
+                            </span>{" "}
                             <br /> Users
                         </h4>{" "}
                     </Link>
@@ -62,7 +72,11 @@ export const AdminPanel = () => {
                             <span className="adminPanelBoxTextNumber">
                                 {allOrders.length}
                             </span>
-                            <br /> Orders
+                            Total Orders <br />
+                            <span className="adminPanelBoxTextNumber">
+                                {pendingOrders}
+                            </span>
+                            New Orders
                         </h4>
                     </Link>
                 </div>

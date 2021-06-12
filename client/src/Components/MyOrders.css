@@ -14,8 +14,30 @@
     gap: 50%;
     border-bottom: 1px solid black;
 }
+.responsiveOrderItem {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    gap: 5%;
+}
 .oneOrderOrange {
     color: #ff7a21;
+}
+.colorizedLink {
+    color: #ff7a21;
+}
+.colorizedLink:hover {
+    text-decoration: underline;
+}
+.emptyOrders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid white;
 }
 .oneOrderDate {
     font-size: 0.8em;
@@ -33,7 +55,7 @@
 }
 .oneOrderOneProduct {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 2%;
 }
@@ -41,11 +63,14 @@
     width: 50px;
 }
 .oneOrderOneProductName {
-    width: 20%;
+    width: 80%;
 }
 .oneOrderOneProductpriceQt {
-    width: 20%;
+    width: 30%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .oneOrderOneProductQt {
     font-size: 0.8em;
@@ -64,6 +89,7 @@
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
+    height: 8vh;
 }
 .retreiveKey:hover {
     border: 2px solid #346751;
@@ -76,32 +102,63 @@
 }
 
 @media (max-width: 768px) {
+    .myOrdersPage * {
+        font-size: 1em;
+    }
+    .responsiveOrderItem {
+        margin: 4% auto;
+    }
     .myOrdersPage {
         width: 100%;
     }
     .oneOrderItem {
         width: 100%;
+        margin-top: 10%;
     }
     .oneOrderHeader {
         gap: 10%;
     }
+
+    .responsiveOrderItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .retreiveKey {
+        margin-top: 5%;
+        width: 60%;
+    }
+    .DeliveredKeys {
+        margin-top: 5%;
+        width: 60%;
+    }
+
     .oneOrderOneProduct {
         flex-wrap: wrap;
         justify-content: space-evenly;
         border-bottom: 1px solid black;
+        flex-direction: column;
     }
     .oneOrderOneProductName {
         width: 50%;
     }
     .oneOrderOneProductpriceQt {
         display: flex;
-        width: 30%;
+        width: 100%;
         align-items: center;
         gap: 5%;
+        justify-content: space-around;
+        margin: 2% auto;
+    }
+    .oneOrderOneProductprice {
+        width: 40%;
     }
     .oneOrderOneProductSubTotal {
         display: flex;
         width: 40%;
+
+        flex-direction: row;
         align-items: center;
         gap: 5%;
     }

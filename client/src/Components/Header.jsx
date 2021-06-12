@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import { loop, cart, arrowDown, menu } from "../svg/svg";
+import { cart, arrowDown, menu } from "../svg/svg";
 import { Link, useHistory } from "react-router-dom";
 import mainLogo from "../images/logo2.png";
 import { useDispatch, useSelector } from "react-redux";
@@ -80,7 +80,6 @@ export default function Header() {
                 </div>
 
                 <div className="headerUserSearchCart">
-                    <li className="headerNavigationItems headerLoop">{loop}</li>
                     {isAuth ? (
                         <Link to="/cart">
                             <li className="headerNavigationItems">
@@ -98,8 +97,13 @@ export default function Header() {
                             }
                         }}
                     >
-                        {arrowDown}{" "}
-                        {user ? user.name : <Link to="/login">LOGIN</Link>}
+                        {user ? (
+                            <span>
+                                {arrowDown} {user.name}
+                            </span>
+                        ) : (
+                            <Link to="/login">LOGIN</Link>
+                        )}
                     </li>
                 </div>
                 {user ? (

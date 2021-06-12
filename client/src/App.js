@@ -21,6 +21,7 @@ import AdminGiftCardDetail from "./Components/adminPanel/AdminGiftCardDetail";
 import AdminPanelAddPage from "./Components/adminPanel/AdminPanelAddPage";
 import AdminOrderDetail from "./Components/adminPanel/AdminOrderDetail";
 import Footer from "./Components/Footer";
+import Search from "./Components/Search";
 function App() {
     return (
         <div>
@@ -50,6 +51,15 @@ function App() {
                             <>
                                 {" "}
                                 <GiftCardDetail match={match} /> <Footer />
+                            </>
+                        )}
+                    ></Route>
+                    <Route
+                        path="/search/:searchInput"
+                        render={({ match }) => (
+                            <>
+                                <Header />
+                                <Search match={match} /> <Footer />
                             </>
                         )}
                     ></Route>

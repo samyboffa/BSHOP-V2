@@ -28,6 +28,17 @@ export const logout = (history) => async (dispatch) => {
     localStorage.clear();
     history.push("/");
 };
+export const getUsersNumber = () => async (dispatch) => {
+    dispatch({ type: "USER_LOADING" });
+    try {
+        let result = await axios.get("/getUserNumber", {
+            headers: { authorization: localStorage.token },
+        });
+        dispatch({ type: "USER_NUMBER_SUCCESS", payload: result.data });
+    } catch (error) {
+        dispatch({ type: "USER_NUMBER_ERROR", error: error.response.data });
+    }
+};
 
 export const getCurrentUser = () => async (dispatch) => {
     dispatch({ type: "USER_LOADING" });

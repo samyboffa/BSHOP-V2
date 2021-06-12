@@ -1,12 +1,14 @@
 .LandpageTotal {
     display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     height: 100vh;
     background-image: url("../images/BG1.png");
     background-position: center;
     background-size: cover;
+}
+.LandpageTitles {
+    width: 50%;
 }
 .LandpageTitle {
     font-size: 7em;
@@ -14,19 +16,77 @@
     margin-left: 4%;
 }
 .LandpageSubtitle {
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: #ff7a21;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 700;
     margin-left: 1%;
+}
+.searchBarLandPage {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    fill: white;
+    gap: 2%;
+}
+.landpageInputBox {
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 70%;
+}
+.searchBarLandPage svg {
+    margin-left: 3%;
+}
+.submitSearchInput {
+    width: 20%;
+    height: 8vh;
+    background-color: #ff7a21;
+    outline: none;
+    border: 2px solid #ff7a21;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.submitSearchInput:hover {
+    background: none;
+}
+.submitSearchInput:active {
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+.SearchInputLandpage {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 8vh;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.SearchInputLandpage::placeholder {
+    color: white;
 }
 
 @media (max-width: 768px) {
+    .LandpageTotal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .LandpageTitles {
+        width: 100%;
+    }
     .LandpageTitle {
         font-size: 5em;
         letter-spacing: 5px;
     }
     .LandpageSubtitle {
         font-size: 1.3em;
+    }
+    .searchBarLandPage {
+        width: 95%;
+        align-self: center;
     }
 }

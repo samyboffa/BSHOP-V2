@@ -154,9 +154,9 @@ export const GiftCards = () => {
                                         className="checkBoxRadio"
                                         type="radio"
                                         name="platform"
-                                        value="STEAM"
+                                        value="PC"
                                     />
-                                    Steam
+                                    PC
                                 </label>{" "}
                             </div>
                         </div>
@@ -190,40 +190,38 @@ export const GiftCards = () => {
                                         className="checkBoxRadio"
                                         type="radio"
                                         name="type"
-                                        value="Android"
+                                        value="GAME"
                                     />
                                     Games
                                 </label>{" "}
+                                <label className="filterBoxRadiocontainer">
+                                    <input
+                                        className="checkBoxRadio"
+                                        type="radio"
+                                        name="type"
+                                        value="GP"
+                                    />
+                                    Game Points
+                                </label>{" "}
                             </div>
                         </div>
-                        <div
-                            className="filterBoxInptBox"
-                            onChange={(e) => setregionFilter(e.target.value)}
-                        >
+                        <div className="filterBoxInptBox">
                             <p className="filterBoxInptBoxSubTitle">
                                 Region :{" "}
                             </p>
-                            <div className="filterBoxRadio">
-                                {" "}
-                                <label className="filterBoxRadiocontainer">
-                                    <input
-                                        className="checkBoxRadio"
-                                        type="radio"
-                                        name="region"
-                                        value="USA"
-                                    />
-                                    United States
-                                </label>{" "}
-                                <label className="filterBoxRadiocontainer">
-                                    <input
-                                        className="checkBoxRadio"
-                                        type="radio"
-                                        name="region"
-                                        value="FR"
-                                    />
-                                    France
-                                </label>{" "}
-                            </div>
+                            <select
+                                onChange={(e) =>
+                                    setregionFilter(e.target.value)
+                                }
+                                className="filterBoxInputInput"
+                            >
+                                <option value="">Region</option>
+                                <option value="USA">United States</option>
+                                <option value="FR">FRANCE </option>
+
+                                <option value="EUROPE">EUROPE</option>
+                                <option value="GERMANY">GERMANY </option>
+                            </select>
                         </div>
                     </div>
                     <button className="FilterBoxApplyFilters" type="submit">

@@ -8,6 +8,7 @@ const initialState = {
     addedToCartError: null,
     userUpdated: false,
     passwordUpdated: false,
+    userNumber: 0,
 };
 
 // pure function=> (state, {type,payload})=>
@@ -89,6 +90,8 @@ export const userReducer = (state = initialState, action) => {
                 error: null,
                 loading: false,
             };
+        case "USER_NUMBER_SUCCESS":
+            return { ...state, loading: false, userNumber: action.payload };
 
         default:
             return state;

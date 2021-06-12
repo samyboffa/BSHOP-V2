@@ -15,6 +15,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 const privateRoute = require("../middelwares/privateRoute");
+const adminRoute = require("../middelwares/adminRoute");
 
 //Register Route
 router.post("/register", async (req, res) => {
@@ -89,6 +90,15 @@ router.get("/getUser", privateRoute, async (req, res) => {
         .select({ password: false })
         .then((data) => res.send(data))
         .catch((err) => console.log(err));
+});
+router.get("/getUserNumber", async (req, res) => {
+    try {
+        const users = await User.countDocuments();
+
+        res.send(users + "");
+    } catch (error) {
+        res.status(400).send(error);
+    }
 });
 
 // Update User

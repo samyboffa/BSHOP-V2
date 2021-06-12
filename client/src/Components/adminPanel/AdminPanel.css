@@ -23,6 +23,11 @@
 .adminPanelBox svg {
     fill: white;
 }
+.adminPanelBox:hover * {
+    fill: #ff7a21;
+    color: #ff7a21;
+    transition: all 0.2s ease;
+}
 .adminPanelBoxText {
     color: white;
 }

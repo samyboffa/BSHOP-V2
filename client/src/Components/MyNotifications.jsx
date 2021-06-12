@@ -10,8 +10,6 @@ export default function MyNotifications() {
 
     return notifLoading ? (
         <Loading />
-    ) : !notif ? (
-        <h1>No Notifications</h1>
     ) : (
         <>
             <Banner
@@ -19,14 +17,22 @@ export default function MyNotifications() {
                 secondWord="Notifications"
                 pathName="Notifications"
             />
-
-            <div className="allNotif">
-                {notif.reverse().map((el, index) => (
-                    <div className="notifBody">
-                        <h3 className="notifMsg">{el.msg} </h3>
-                    </div>
-                ))}
-            </div>
+            {notif.length === 0 ? (
+                <div className="emptyOrders">
+                    {" "}
+                    <span>
+                        No Notifications <br />{" "}
+                    </span>
+                </div>
+            ) : (
+                <div className="allNotif">
+                    {notif.reverse().map((el, index) => (
+                        <div className="notifBody">
+                            <h3 className="notifMsg">{el.msg} </h3>
+                        </div>
+                    ))}
+                </div>
+            )}
         </>
     );
 }

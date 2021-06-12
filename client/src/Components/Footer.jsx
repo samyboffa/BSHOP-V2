@@ -20,27 +20,23 @@ export default function Footer() {
                     <h2 className="footerTitle footertitleMargin">ABOUT US</h2>
                     <p className="footerPar">
                         B-SHOP is The first Gaming Store In Tunisia. With +10000
-                        Orders, We Became The Most Trustfull Gaming Web Site. We
-                        are highly specialized shops selling entertainment
-                        products to a targeted niche. Spanning a range of
-                        niches, from video games to living room games to role
-                        playing games, well-managed game stores can attract a
-                        very loyal customer base.
+                        Orders, We Became The Most Trustfull Gaming Web Site in
+                        Tunisia. We are highly specialized shop selling
+                        entertainment products. We Provide all types of gift
+                        card (play store, psn, xbox, Itunes ...), In-Game
+                        currency TOP-UP (fortnite Vbucks, Pubg UC, LOL RP ...),
+                        And all types of accounts (netflix, spotify, discord
+                        ...). <br />
+                        B-SHOP : ALL YOUR GAMES .. IN ONE PLACE
                     </p>
                 </div>
                 <div className="footerBestSeller footerSection">
-                    <h2 className="footerTitle">BEST SELLERS</h2>
-                    <li className="footerPar">
-                        {" "}
-                        {bannerArrow} Fortnite VBucks
-                    </li>
-                    <li className="footerPar">
-                        {" "}
-                        {bannerArrow} Free Fire Diamonds
-                    </li>
-                    <li className="footerPar"> {bannerArrow} GTA V</li>
-                    <li className="footerPar"> {bannerArrow} PES 2021</li>
-                    <li className="footerPar"> {bannerArrow} FIFA 2021</li>
+                    <h2 className="footerTitle">PAYMENT SUPPORTED</h2>
+                    <li className="footerPar"> {bannerArrow} E-DINAR</li>
+                    <li className="footerPar"> {bannerArrow} D17</li>
+                    <li className="footerPar"> {bannerArrow} RUNPAY</li>
+                    <li className="footerPar"> {bannerArrow} SOBFLOUS</li>
+                    <li className="footerPar"> {bannerArrow} SWARED</li>
                 </div>
                 <div className="footerContact footerSection">
                     <h2 className="footerTitle">CONTACT US</h2>

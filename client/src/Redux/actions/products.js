@@ -23,6 +23,7 @@ export const getSingleProduct = (id) => async (dispatch) => {
         });
     } catch (error) {}
 };
+
 export const verifyAdmin = () => async (dispatch) => {
     dispatch({ type: "PRODUCTSLOADING" });
     try {
